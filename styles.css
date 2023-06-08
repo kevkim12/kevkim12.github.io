@@ -31,3 +31,15 @@ body {
     margin-top: 0;
     color: rgb(231, 231, 231);
 }
+
+.content-frame {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: calc(100% - 2in);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
