@@ -58,3 +58,32 @@ body {
     margin: 0 10px;
     color: black;
 }
+
+.section {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section h2 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.section p {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.section h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #09203F, #537895);
+    margin: 10px auto;
+}
