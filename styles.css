@@ -1,0 +1,33 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+body {
+    background: linear-gradient(to top right, #5A4FCF, #B7A0FF);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change justify-content to flex-start */
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.title {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; /* Add margin-bottom: 10px; */
+    color: white;
+}
+
+.subtitle {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0;
+    color: rgb(231, 231, 231);
+}
