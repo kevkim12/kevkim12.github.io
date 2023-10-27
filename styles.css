@@ -74,17 +74,23 @@ body {
 }
 
 .project-image {
-    width: 30%;
+    width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 5px;
 }
 
 .project-image:hover {
     opacity: 0.7;
     transition: .5s;
     cursor: pointer;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
 }
 
 .section {
