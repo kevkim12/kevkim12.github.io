@@ -4,7 +4,7 @@ const NavbarFrame = styled.nav`
   display: flex;
   flex-direction: row;
   background-color: #f2f2f2;
-  width: 100vw;
+  margin: 0;
 
   ul {
     display: flex;
@@ -13,15 +13,26 @@ const NavbarFrame = styled.nav`
   }
 `
 
+const NavbarButtons = styled.ul`
+  background-color: #fff;
+`
+
+const LogoContainer = styled.div`
+  background-color: #000;
+`
+
 function Navbar() {
   return (
     <NavbarFrame>
-        <ul>
+      <LogoContainer>
+        <h1>Kevin Kim</h1>
+      </LogoContainer>
+        <NavbarButtons>
           <li>Home</li>
           <li>About</li>
           <li>Projects</li>
           <li>Contact</li>
-        </ul>
+        </NavbarButtons>
       </NavbarFrame>
   )
 }
