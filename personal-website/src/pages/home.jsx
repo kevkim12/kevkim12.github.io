@@ -39,13 +39,13 @@ const Information = styled.div`
 const Header = styled.h1`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 4em;
+  font-size: calc(3vw);
 `
 
 const Description = styled.p`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 2em;
+  font-size: calc(2vw);
 `
 
 const Fill = styled.div`
