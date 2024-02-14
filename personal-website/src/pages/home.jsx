@@ -15,7 +15,7 @@ const PictureContainer = styled.div`
   height: auto;
   max-width: 440px;
   border-radius: 50%;
-  border: 2px solid #d6d6d6;
+  border: 2px solid #ce9eff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ const Fill = styled.div`
 function Home() {
   return (
     <>
-      <Introduction>
+      <Introduction id="home">
         <Information>
           <Header>Hi, I'm Kevin.</Header>
           <Description>I'm a software and game developer based in Boston.</Description>
