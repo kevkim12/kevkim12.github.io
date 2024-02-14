@@ -5,10 +5,11 @@ import Navbar from './layouts/navbar'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState("light")
   return (
     <>
     <Navbar/>
+    
     </>
   )
 }

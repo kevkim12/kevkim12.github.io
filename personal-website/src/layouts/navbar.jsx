@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-
 const NavbarFrame = styled.nav`
   display: flex;
   flex-direction: row;
@@ -47,14 +46,15 @@ const NavbarButton = styled.button`
 const NameLogo = styled.h1`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1.7em;
+  color: #474747;
+  margin-left: 20px;
 `
 
 function Navbar() {
   return (
     <NavbarFrame>
-
-        <NameLogo>&lt;/&gt; Kevin Kim</NameLogo>
+        <NameLogo>Kevin Kim</NameLogo>
         <NavbarButtons>
           <li><NavbarButton>Home</NavbarButton></li>
           <li><NavbarButton>About</NavbarButton></li>
