@@ -6,14 +6,15 @@ const Introduction = styled.div`
   flex-direction: row;
   place-content: center;
   align-items: center;
+  justify-content: center;
   height: 80vh;
   gap: 5vw;
 `
 
 const PictureContainer = styled.div`
+  position: relative;
   width: 20%;
   height: auto;
-  max-width: 440px;
   border-radius: 50%;
   border: 2px solid #ce9eff;
   display: flex;
@@ -32,7 +33,6 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 30vh;
   max-width: 50vw;
 `
 
