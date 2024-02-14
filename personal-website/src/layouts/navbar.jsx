@@ -3,8 +3,8 @@ import styled from 'styled-components'
 const NavbarFrame = styled.nav`
   display: flex;
   flex-direction: row;
-  background-color: #f2f2f2;
   margin: 0;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
 
   ul {
     display: flex;
@@ -22,7 +22,12 @@ const NavbarButtons = styled.ul`
 `
 
 const NavbarButton = styled.button`
-
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.2em;
 `
 
 const LogoContainer = styled.div`
