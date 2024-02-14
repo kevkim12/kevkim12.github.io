@@ -15,10 +15,18 @@ const NavbarFrame = styled.nav`
 
 const NavbarButtons = styled.ul`
   background-color: #fff;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const NavbarButton = styled.button`
+
 `
 
 const LogoContainer = styled.div`
-  background-color: #000;
+  font: 1.5em 'Roboto', sans-serif;
 `
 
 function Navbar() {
@@ -28,10 +36,10 @@ function Navbar() {
         <h1>Kevin Kim</h1>
       </LogoContainer>
         <NavbarButtons>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><NavbarButton>Home</NavbarButton></li>
+          <li><NavbarButton>About</NavbarButton></li>
+          <li><NavbarButton>Projects</NavbarButton></li>
+          <li><NavbarButton>Contact</NavbarButton></li>
         </NavbarButtons>
       </NavbarFrame>
   )
