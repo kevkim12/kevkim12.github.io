@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const NavbarFrame = styled.nav`
@@ -48,7 +47,7 @@ const NameLogo = styled.h1`
   font-weight: 100;
   font-size: 1.7em;
   color: #474747;
-  margin-left: 20px;
+  margin-left: 5vw;
 `
 
 function Navbar() {
