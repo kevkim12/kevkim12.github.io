@@ -58,7 +58,7 @@ function Home() {
       <Introduction id="home">
         <Information>
           <Header>Hi, I'm Kevin.</Header>
-          <Description>I'm a software and game developer based in Boston.</Description>
+          <Description>I'm a software and game developer based in Atlanta.</Description>
         </Information>
         <PictureContainer>
           <Picture src={picture} alt="Kevin Kim"></Picture>

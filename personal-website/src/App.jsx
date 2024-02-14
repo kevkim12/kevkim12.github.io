@@ -3,10 +3,10 @@ import '@fontsource/roboto/100.css';
 
 import Navbar from './layouts/navbar'
 
-import Home from './home/home'
-import About from './home/about'
-import Projects from './home/projects'
-import Contact from './home/contact'
+import Home from './components/home'
+import About from './components/about'
+import Projects from './components/projects'
+import Contact from './components/contact'
 
 import './App.css'
 

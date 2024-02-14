@@ -5,7 +5,9 @@ const NavbarFrame = styled.nav`
   top: 0;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 0;
+  gap: 50%;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -33,7 +35,7 @@ const NavbarButton = styled.button`
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: calc(1.2vw);
 
   transition: color 0.3s, background-color 0.3s;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ce9eff 50%, #ce9eff 100%);
@@ -47,11 +49,13 @@ const NavbarButton = styled.button`
 `
 
 const NameLogo = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 1.7em;
+  font-size: calc(1.7vw);
   color: #474747;
-  margin-left: 5vw;
 `
 
 function Navbar() {
