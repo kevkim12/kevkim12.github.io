@@ -1,10 +1,13 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+
 
 const NavbarFrame = styled.nav`
   display: flex;
   flex-direction: row;
   margin: 0;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 
   ul {
     display: flex;
@@ -22,24 +25,36 @@ const NavbarButtons = styled.ul`
 `
 
 const NavbarButton = styled.button`
+  color: #474747;
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 1.2em;
+
+  transition: color 0.3s, background-color 0.3s;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ce9eff 50%, #ce9eff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  &:hover {
+    color: #ce9eff;
+    background-position: 100%; /* Move gradient position when hovering */
+  }
 `
 
-const LogoContainer = styled.div`
-  font: 1.5em 'Roboto', sans-serif;
+const NameLogo = styled.h1`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
 `
 
 function Navbar() {
   return (
     <NavbarFrame>
-      <LogoContainer>
-        <h1>Kevin Kim</h1>
-      </LogoContainer>
+
+        <NameLogo>&lt;/&gt; Kevin Kim</NameLogo>
         <NavbarButtons>
           <li><NavbarButton>Home</NavbarButton></li>
           <li><NavbarButton>About</NavbarButton></li>
