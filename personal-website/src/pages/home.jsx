@@ -11,8 +11,9 @@ const Introduction = styled.div`
 `
 
 const PictureContainer = styled.div`
-  width: 440px;
-  height: 440px;
+  width: 20%;
+  height: auto;
+  max-width: 440px;
   border-radius: 50%;
   border: 2px solid #d6d6d6;
   display: flex;
@@ -21,16 +22,18 @@ const PictureContainer = styled.div`
 `
 
 const Picture = styled.img`
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
   border-radius: 50%;
 `
 
 const Information = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 50%;
   height: 30vh;
+  max-width: 50vw;
 `
 
 const Header = styled.h1`
@@ -45,18 +48,24 @@ const Description = styled.p`
   font-size: 2em;
 `
 
+const Fill = styled.div`
+  height: 12vh;
+`
+
 function Home() {
   return (
-    <Introduction>
-      <Information>
-        <Header>Hi, I'm Kevin.</Header>
-        <Description>I'm a software and game developer based in Boston.</Description>
-      </Information>
-      <PictureContainer>
-        <Picture src={picture} alt="Kevin Kim"></Picture>
-      </PictureContainer>
-      
-    </Introduction>
+    <>
+      <Introduction>
+        <Information>
+          <Header>Hi, I'm Kevin.</Header>
+          <Description>I'm a software and game developer based in Boston.</Description>
+        </Information>
+        <PictureContainer>
+          <Picture src={picture} alt="Kevin Kim"></Picture>
+        </PictureContainer>
+      </Introduction>
+      <Fill/>
+    </>
   )
 }
 
