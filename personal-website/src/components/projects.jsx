@@ -3,22 +3,24 @@ import styled from 'styled-components'
 import nightfall from '../assets/projects/Nightfall.png'
 
 const Container = styled.div`
-  background-color: #000322;
+  background-color: #a3a3a3;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 20%;
 `;
 
 const ProjectContainer = styled.div`
-  background-color: #a0a0a0;
+  margin-top: 5%;
+  background-color: #880808;
+  height: 80%;
 `;
 
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
   background-color: #101461;
-  width: 70%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
