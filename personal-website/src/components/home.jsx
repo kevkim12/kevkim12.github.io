@@ -8,7 +8,7 @@ const Background = styled.div`
   background-size: cover;
   height: 120vh;
   opacity: 0;
-  animation: fadeIn 2s ease forwards;
+  animation: fadeIn 4s ease forwards;
   
   @keyframes fadeIn {
     from {
