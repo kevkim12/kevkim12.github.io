@@ -9,7 +9,7 @@ const NavbarFrame = styled.nav`
   margin: 0;
   gap: 50%;
   width: 100%;
-  background-color: #fff;
+  background-color: #00021a;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   z-index: 1000;
 
@@ -21,7 +21,7 @@ const NavbarFrame = styled.nav`
 `
 
 const NavbarButtons = styled.ul`
-  background-color: #fff;
+  background-color: #00021a;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ const NavbarButtons = styled.ul`
 `
 
 const NavbarButton = styled.button`
-  color: #474747;
+  color: #fff;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -53,9 +53,9 @@ const NameLogo = styled.h1`
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-size: calc(1.7vw);
-  color: #474747;
+  color: #fff;
 `
 
 function Navbar() {
@@ -70,7 +70,7 @@ function Navbar() {
 
   return (
     <NavbarFrame>
-      <NameLogo>Kevin Kim</NameLogo>
+      <NameLogo>Kevin Kim &lt;/&gt;</NameLogo>
       <NavbarButtons>
         <li><NavbarButton onClick={() => goTo('home')}>Home</NavbarButton></li>
         <li><NavbarButton onClick={() => goTo('about')}>About</NavbarButton></li>

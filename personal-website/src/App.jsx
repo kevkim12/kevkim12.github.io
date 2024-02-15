@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '@fontsource/roboto';
 import '@fontsource/roboto/100.css';
 
 import Navbar from './layouts/navbar'

@@ -24,7 +24,7 @@ const PictureContainer = styled.div`
   width: 20%;
   height: auto;
   border-radius: 50%;
-  border: 2px solid #ce9eff;
+  border: 2px solid #410572;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,11 +62,6 @@ const Description = styled.p`
   transition: opacity 6s ease;
 `;
 
-const Fill = styled.div`
-  height: 12vh;
-  background-color: #a9a9a9;
-`;
-
 function Home() {
   useEffect(() => {
     const header = document.getElementById('header');
@@ -88,7 +83,6 @@ function Home() {
           </PictureContainer>
         </Introduction>
       </Background>
-      <Fill />
     </>
   );
 }
