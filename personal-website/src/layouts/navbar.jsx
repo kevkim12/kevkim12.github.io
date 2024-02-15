@@ -60,12 +60,8 @@ const NameLogo = styled.h1`
 
 function Navbar() {
   const goTo = (id) => {
-    if (id === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      const element = document.getElementById(id);
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
