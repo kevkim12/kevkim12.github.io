@@ -7,6 +7,17 @@ const Background = styled.div`
   background-image: url(${background});
   background-size: cover;
   height: 120vh;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const Introduction = styled.div`
