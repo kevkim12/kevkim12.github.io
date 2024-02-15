@@ -14,7 +14,7 @@ const Container = styled.div`
 const ProjectContainer = styled.div`
   margin-top: 5%;
   background-color: #880808;
-  height: 80%;
+  height: auto%;
 `;
 
 const Project = styled.div`
@@ -27,11 +27,12 @@ const Project = styled.div`
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
   
   img {
     max-width: 95%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     margin: auto;
   }
 
