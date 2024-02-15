@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 import nightfall from '../assets/projects/Nightfall.png'
+import { VscGithub } from "react-icons/vsc";
 
 const Container = styled.div`
-  background-color: #a3a3a3;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,13 +13,12 @@ const Container = styled.div`
 
 const ProjectContainer = styled.div`
   margin-top: 5%;
-  background-color: #880808;
-  height: auto%;
+  height: auto;
 `;
 
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
-  background-color: #101461;
+  background-color: #a3a3a3;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -30,7 +29,7 @@ const Project = styled.div`
   margin-top: 5px;
   
   img {
-    max-width: 95%;
+    max-width: 100%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     margin: auto;
@@ -41,17 +40,37 @@ const Project = styled.div`
     color: #fff;
     font-size: calc(1.5vw);
     font-weight: 800;
-    margin-left: 3%;
   }
 
   p {
     color: #fff;
-    margin-left: 3%;
+    font-size: calc(.9vw);
+    font-weight: 400;
   }
 `;
 
-const ProjectDescription = styled.div`
+const ProjectHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
+const ProjectDescription = styled.div`  
+  margin-left: 1%;
+`;
+
+const ProjectTechContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const ProjectTech = styled.div`
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: calc(.8vw);
+  margin-right: 1%;
 `;
 
 function Projects() {
@@ -64,13 +83,21 @@ function Projects() {
               <img src={nightfall} alt="Nightfall"/>
             </div>
             <ProjectDescription>
-              <h3>Nightfall</h3>
+              <ProjectHeader>
+                <h3>Nightfall</h3>
+                <a href="https://github.com/kevkim12/nightfall-video-game" target="_blank"><VscGithub size={25}/></a>
+              </ProjectHeader>
               <p>
                 Nightfall is a shooter game operated on a round-based system where players must eliminate
                 entities designated as the Infected. Players must either survive or complete objectives by
                 killing the zombies or satisfying missions. However, there are many different zombie classes
                 which can drastically change gameplay
               </p>
+              <ProjectTechContainer>
+                <ProjectTech>Lua</ProjectTech>
+                <ProjectTech>Rojo</ProjectTech>
+                <ProjectTech>Roblox Studio</ProjectTech>
+              </ProjectTechContainer>
             </ProjectDescription>
           </Project>
         </ProjectContainer>
