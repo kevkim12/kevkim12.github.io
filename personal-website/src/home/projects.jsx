@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import nightfall from '../assets/projects/Nightfall.png'
-import { VscGithub } from "react-icons/vsc";
+import safeflight from '../assets/projects/SafeFlight.png'
 import Project from '../components/project'
 
 const Container = styled.div`
@@ -32,7 +32,16 @@ function Projects() {
             alt="Nightfall"
             github="https://github.com/kevkim12/nightfall-video-game"
             tech={["Lua", "Rojo", "Roblox Studio"]}
-
+          />
+          <Project
+            title="Safe Flight"
+            description="Safe Flight is a website that is capable of telling whether a location is safe to travel
+            or not. Every country and continent is rated on a scale (from low risk to extremely high risk). It's
+            safety score is calculated with the usage of various APIs including the AirLabs and Travel Advisory API."
+            image={safeflight}
+            alt="Safe Flight"
+            github="https://github.com/kevkim12/safe-flight-website"
+            tech={["React", "Flask", "JavaScript", "Python", "HTML/CSS"]}
           />
         </ProjectContainer>
 
