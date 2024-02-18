@@ -10,6 +10,14 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 20%;
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -22,6 +30,7 @@ function Projects() {
     <>
       <Container id="projects">
         <ProjectContainer>
+        <h1>Projects</h1>
           <Project
             title="Nightfall"
             description="Nightfall is a shooter game operated on a round-based system where players must eliminate

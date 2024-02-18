@@ -4,7 +4,7 @@ import { VscGithub } from "react-icons/vsc";
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
   background-color: #000647;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,8 +14,8 @@ const Project = styled.div`
   margin-top: 5px;
   
   img {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 10px 0px 0px 10px;
     margin: auto;
   }
@@ -49,9 +49,17 @@ const ProjectHeader = styled.div`
   }
 `;
 
+const ImageContainer = styled.div`
+  background-color: #a3a3a3;
+  display: flex;
+  width: 50%;
+`;
+
 const ProjectDescription = styled.div`  
   margin-left: 1%;
-  width: 1000px;
+  width: 50%;
+  height: 80%;
+  background-color: #a3a3a3;
 `;
 
 const ProjectTechContainer = styled.div`
@@ -71,9 +79,9 @@ const ProjectTech = styled.div`
 export default function ProjectTemplate({title, description, image, alt, github, tech}) {
   return (
     <Project>
-      <div>
+      <ImageContainer>
         <img src={image} alt={alt}/>
-      </div>
+      </ImageContainer>
       <ProjectDescription>
         <ProjectHeader>
           <h3>{title}</h3>
