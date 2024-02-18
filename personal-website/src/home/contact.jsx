@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 import background from '../assets/backgrounds/wave-fade2.png';
 
@@ -146,18 +149,42 @@ function Contact() {
     document.getElementById("messageInput").value = "";
   }
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    var name = document.getElementById("nameInput").value;
+    var email = document.getElementById("emailInput").value;
+    var message = document.getElementById("messageInput").value;
+    if (name == "" || email == "" || message == "") {
+      alert("All fields must be filled out");
+      return;
+    }
+
+    e.preventDefault();
+
+    // https://www.emailjs.com/docs/faq/is-it-okay-to-expose-my-public-key/
+    emailjs.sendForm('service_vna7pfi', 'template_ullp6cn', form.current, 'oArH-jmdfknIp7o-T')
+      .then((result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          resetForm();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <Container id="contact">
       <ContactContainer>
         <h1>Contact</h1>
-        <ContactForm>
+        <ContactForm ref={form}>
           <TopForm>
-            <InfoInput1 id="nameInput" type="text" placeholder="Name" />
-            <InfoInput1 id="emailInput" type="text" placeholder="Email" />
+            <InfoInput1 name="user_name" id="nameInput" type="text" placeholder="Name" />
+            <InfoInput1 name="user_email" id="emailInput" type="text" placeholder="Email" />
           </TopForm>
-          <InfoInput2 id="messageInput" type="text" placeholder="Enter your message" />
+          <InfoInput2 name="message" id="messageInput" type="text" placeholder="Enter your message" />
           <ButtonContainer>
-            <SubmitButton type="button">Submit</SubmitButton>
+            <SubmitButton type="button" onClick={sendEmail} >Submit</SubmitButton>
             <ResetButton type="button" onClick={resetForm} >Reset</ResetButton>
           </ButtonContainer>
         </ContactForm>
