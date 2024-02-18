@@ -163,7 +163,7 @@ function Contact() {
     e.preventDefault();
 
     // https://www.emailjs.com/docs/faq/is-it-okay-to-expose-my-public-key/
-    emailjs.sendForm('service_vna7pfi', 'template_ullp6cn', form.current, 'oArH-jmdfknIp7o-T')
+    emailjs.sendForm('service_6gz73qg', 'template_ullp6cn', form.current, 'oArH-jmdfknIp7o-T')
       .then((result) => {
           console.log(result.text);
           alert("Message sent successfully!");
