@@ -14,13 +14,14 @@ const Project = styled.div`
     text-align: left;
     color: #fff;
     font-size: calc(1.5vw);
-    font-weight: 500;
+    font-weight: 100;
   }
 
   p {
     color: #fff;
     font-size: calc(.9vw);
     font-weight: 100;
+    margin-right: 1%;
   }
   
 `;
