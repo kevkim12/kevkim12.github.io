@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
+import background from '../assets/backgrounds/wave-fade2.png';
+
 const Container = styled.div`
+  background-image: url(${background});
+  background-size: cover;
   height: 80vh;
   display: flex;
   flex-direction: column;
