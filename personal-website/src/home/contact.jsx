@@ -104,6 +104,10 @@ const SubmitButton = styled.button`
   &:hover {
     background-color: #11156d;
   }
+
+  &:active {
+    background-color: #0f1360;
+  }
 `;
 
 const ResetButton = styled.button`
@@ -123,6 +127,10 @@ const ResetButton = styled.button`
 
   &:hover {
     background-color: #1b153f;
+  }
+
+  &:active {
+    background-color: #151030;
   }
 `;
 
