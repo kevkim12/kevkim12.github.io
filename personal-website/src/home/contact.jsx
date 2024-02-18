@@ -33,7 +33,7 @@ const ContactContainer = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 100%;
   padding: 1%;
   display: flex;
@@ -78,17 +78,63 @@ const InfoInput2 = styled.textarea`
   font-weight: 100;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 4%;
+  width: 60%;
+`;
+
+const SubmitButton = styled.button`
+  width: 48%;
+  padding: 1%;
+  font-size: 1.2vw;
+  background-color: #0f1360;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+`;
+
+const ResetButton = styled.button`
+  width: 48%;
+  padding: 4%;
+  font-size: 1.2vw;
+  background-color: #151030;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+`;
+
 function Contact() {
+  function resetForm() {
+    document.getElementById("nameInput").value = "";
+    document.getElementById("emailInput").value = "";
+    document.getElementById("messageInput").value = "";
+  }
+
   return (
     <Container id="contact">
       <ContactContainer>
         <h1>Contact</h1>
         <ContactForm>
           <TopForm>
-            <InfoInput1 type="text" placeholder="Name" />
-            <InfoInput1 type="text" placeholder="Email" />
+            <InfoInput1 id="nameInput" type="text" placeholder="Name" />
+            <InfoInput1 id="emailInput" type="text" placeholder="Email" />
           </TopForm>
-          <InfoInput2 type="text" placeholder="Message" />
+          <InfoInput2 id="messageInput" type="text" placeholder="Message" />
+          <ButtonContainer>
+            <SubmitButton type="button">Submit</SubmitButton>
+            <ResetButton type="button" onClick={resetForm} >Reset</ResetButton>
+          </ButtonContainer>
         </ContactForm>
       </ContactContainer>
     </Container>
