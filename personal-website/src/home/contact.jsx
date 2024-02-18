@@ -48,8 +48,8 @@ const TopForm = styled.div`
 `;
 
 const InfoInput1 = styled.input`
-  width: 45%;
-  padding: 1%;
+  width: 44%;
+  padding: 2%;
   font-size: 1.2vw;
 
   background-color: #dedede;
@@ -98,6 +98,12 @@ const SubmitButton = styled.button`
 
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #11156d;
+  }
 `;
 
 const ResetButton = styled.button`
@@ -112,6 +118,12 @@ const ResetButton = styled.button`
 
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #1b153f;
+  }
 `;
 
 function Contact() {
@@ -130,7 +142,7 @@ function Contact() {
             <InfoInput1 id="nameInput" type="text" placeholder="Name" />
             <InfoInput1 id="emailInput" type="text" placeholder="Email" />
           </TopForm>
-          <InfoInput2 id="messageInput" type="text" placeholder="Message" />
+          <InfoInput2 id="messageInput" type="text" placeholder="Enter your message" />
           <ButtonContainer>
             <SubmitButton type="button">Submit</SubmitButton>
             <ResetButton type="button" onClick={resetForm} >Reset</ResetButton>
