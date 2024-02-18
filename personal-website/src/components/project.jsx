@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { VscGithub } from "react-icons/vsc";
+import styled from 'styled-components';
+import githubIcon from '../assets/icons/github.png';
 
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
@@ -9,13 +9,6 @@ const Project = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
-  
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 0px 0px 10px;
-    margin: auto;
-  }
 
   h3 {
     text-align: left;
@@ -27,7 +20,7 @@ const Project = styled.div`
   p {
     color: #fff;
     font-size: calc(.9vw);
-    font-weight: 200;
+    font-weight: 100;
   }
   
 `;
@@ -35,7 +28,6 @@ const Project = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #fff;
 `;
 
 const ProjectHeader = styled.div`
@@ -50,18 +42,31 @@ const ProjectHeader = styled.div`
     color: white;
     text-decoration: none;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  a{
+    width: 8%;
+  }
 `;
 
 const ImageContainer = styled.div`
-  background-color: #a3a3a3;
   width: 50%;
-  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    margin: auto;
+  }
 `;
 
 const ProjectDescription = styled.div`  
   margin-left: 1%;
   width: 50%;
-  background-color: #a3a3a3;
 `;
 
 const ProjectTechContainer = styled.div`
@@ -88,7 +93,7 @@ export default function ProjectTemplate({title, description, image, alt, github,
         <ProjectDescription>
           <ProjectHeader>
             <h3>{title}</h3>
-            {github && <a href={github} target="_blank"><VscGithub size={'2em'}/></a>}
+            {github && <a href={github} target="_blank"><img src={githubIcon} alt="github"/></a>}
           </ProjectHeader>
           <p>{description}</p>
           <ProjectTechContainer>
