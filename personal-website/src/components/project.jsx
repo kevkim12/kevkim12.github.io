@@ -4,10 +4,7 @@ import { VscGithub } from "react-icons/vsc";
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
   background-color: #000647;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 45%;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +12,7 @@ const Project = styled.div`
   
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px 0px 0px 10px;
     margin: auto;
   }
@@ -24,15 +21,21 @@ const Project = styled.div`
     text-align: left;
     color: #fff;
     font-size: calc(1.5vw);
-    font-weight: 800;
+    font-weight: 500;
   }
 
   p {
     color: #fff;
     font-size: calc(.9vw);
-    font-weight: 400;
+    font-weight: 200;
   }
   
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
 `;
 
 const ProjectHeader = styled.div`
@@ -51,14 +54,13 @@ const ProjectHeader = styled.div`
 
 const ImageContainer = styled.div`
   background-color: #a3a3a3;
-  display: flex;
   width: 50%;
+  height: 100%;
 `;
 
 const ProjectDescription = styled.div`  
   margin-left: 1%;
   width: 50%;
-  height: 80%;
   background-color: #a3a3a3;
 `;
 
@@ -79,19 +81,21 @@ const ProjectTech = styled.div`
 export default function ProjectTemplate({title, description, image, alt, github, tech}) {
   return (
     <Project>
-      <ImageContainer>
-        <img src={image} alt={alt}/>
-      </ImageContainer>
-      <ProjectDescription>
-        <ProjectHeader>
-          <h3>{title}</h3>
-          {github && <a href={github} target="_blank"><VscGithub size={'2em'}/></a>}
-        </ProjectHeader>
-        <p>{description}</p>
-        <ProjectTechContainer>
-          {tech.map((t, index) => <ProjectTech key={index}>{t}</ProjectTech>)}
-        </ProjectTechContainer>
-      </ProjectDescription>  
+      <Container>
+        <ImageContainer>
+          <img src={image} alt={alt}/>
+        </ImageContainer>
+        <ProjectDescription>
+          <ProjectHeader>
+            <h3>{title}</h3>
+            {github && <a href={github} target="_blank"><VscGithub size={'2em'}/></a>}
+          </ProjectHeader>
+          <p>{description}</p>
+          <ProjectTechContainer>
+            {tech.map((t, index) => <ProjectTech key={index}>{t}</ProjectTech>)}
+          </ProjectTechContainer>
+        </ProjectDescription>
+      </Container>
     </Project>
   );
 }
