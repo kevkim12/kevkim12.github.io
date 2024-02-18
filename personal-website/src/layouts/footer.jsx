@@ -35,7 +35,7 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 10%;
+  width: 30%;
 
   h1 {
     font-family: 'Roboto', sans-serif;
@@ -49,7 +49,7 @@ function Footer() {
   return(
     <Container>
       <HeaderContainer>
-        <h1>Links</h1>
+        <h1>Connect with me</h1>
       </HeaderContainer>
       <SocialContainer>
         <a href="https://github.com/kevkim12" target="_blank" ><img src={githubIcon} alt="Github" /></a>
