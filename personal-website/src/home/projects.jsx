@@ -82,6 +82,7 @@ function Projects() {
             be updated as I continue to work on more projects and learn new skills."
             image={portfolio}
             alt="Personal Portfolio"
+            github="https://github.com/kevkim12/portfolio"
             tech={["React", "Vite", "JavaScript", "HTML/CSS"]}
           />
         </ProjectContainer>
