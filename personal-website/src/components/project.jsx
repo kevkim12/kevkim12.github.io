@@ -3,7 +3,7 @@ import githubIcon from '../assets/icons/github.png';
 
 const Project = styled.div`
   font-family: 'Roboto', sans-serif;
-  background-color: #000647;
+  background-color: #151030;
   width: 45%;
   border-radius: 10px;
   margin-left: auto;
