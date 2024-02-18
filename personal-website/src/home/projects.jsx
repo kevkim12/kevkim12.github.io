@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import nightfall from '../assets/projects/Nightfall.png'
 import safeflight from '../assets/projects/SafeFlight.png'
+import portfolio from '../assets/projects/Portfolio.png'
 import Project from '../components/project'
 
 const Container = styled.div`
@@ -51,6 +52,15 @@ function Projects() {
             alt="Safe Flight"
             github="https://github.com/kevkim12/safe-flight-website"
             tech={["React", "Flask", "JavaScript", "Python", "HTML/CSS"]}
+          />
+          <Project
+            title="Personal Portfolio"
+            description="This website is my personal portfolio! It displays my projects, skills, and contact 
+            information. You can view more about each project by clicking on the thumbnails (soon). This portfolio will
+            be updated as I continue to work on more projects and learn new skills."
+            image={portfolio}
+            alt="Personal Portfolio"
+            tech={["React", "Vite", "JavaScript", "HTML/CSS"]}
           />
         </ProjectContainer>
 
