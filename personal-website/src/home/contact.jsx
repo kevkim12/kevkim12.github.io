@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,6 @@ const InfoInput2 = styled.textarea`
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: auto;
   margin-top: 4%;
   width: 60%;
 `;
@@ -134,6 +133,8 @@ const ResetButton = styled.button`
   }
 `;
 
+
+
 function Contact() {
   function resetForm() {
     document.getElementById("nameInput").value = "";
@@ -157,6 +158,7 @@ function Contact() {
           </ButtonContainer>
         </ContactForm>
       </ContactContainer>
+      
     </Container>
   );
 }

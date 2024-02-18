@@ -4,6 +4,7 @@ import '@fontsource/roboto/100.css';
 import '@fontsource/source-sans-pro';
 
 import Navbar from './layouts/navbar'
+import Footer from './layouts/footer'
 
 import Home from './home/home'
 import About from './home/about'
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
