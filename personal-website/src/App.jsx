@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '@fontsource/roboto';
 import '@fontsource/roboto/100.css';
+import '@fontsource/source-sans-pro';
 
 import Navbar from './layouts/navbar'
 
