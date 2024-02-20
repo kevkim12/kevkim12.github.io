@@ -300,9 +300,7 @@ Error generating stack: `+l.message+`
             entities designated as the Infected. Players must either survive or complete objectives by
             killing the zombies or satisfying missions. However, there are many different zombie classes
             which can drastically change gameplay.`,image:h0,alt:"Nightfall",github:"https://github.com/kevkim12/nightfall-video-game",tech:["Rojo","Roblox Studio","Lua"]}),C.jsx(qn,{title:"PhotoShare",description:`PhotoShare is a web-based application that allows users to create photo albums, upload photos,
-            tag them, and share them with friends. Users can browse photos and albums, search for specific photos or
-            albums, and leave comments on them. The app also allows users to like photos and view the most popular tags
-            associated with them.`,image:g0,alt:"PhotoShare",github:"https://github.com/kevkim12/photo-sharing-website",tech:["Flask","MySQL","JavaScript","Python","HTML/CSS"]}),C.jsx(qn,{title:"Safe Flight",description:`Safe Flight is a website that is capable of telling whether a location is safe to travel
+            tag them, and share pictures with friends.`,image:g0,alt:"PhotoShare",github:"https://github.com/kevkim12/photo-sharing-website",tech:["Flask","MySQL","JavaScript","Python","HTML/CSS"]}),C.jsx(qn,{title:"Safe Flight",description:`Safe Flight is a website that is capable of telling whether a location is safe to travel
             or not. Every country and continent is rated on a scale (from low risk to extremely high risk). It's
             safety score is calculated with the usage of various APIs including the AirLabs and Travel Advisory API.`,image:m0,alt:"Safe Flight",github:"https://github.com/kevkim12/safe-flight-website",tech:["React","Flask","MongoDB","JavaScript","Python","HTML/CSS"]}),C.jsx(qn,{title:"Personal Portfolio",description:`This website is my personal portfolio! It displays my projects, skills, and contact 
             information. You can view more about each project by clicking on the thumbnails (to be implemented). This portfolio will
