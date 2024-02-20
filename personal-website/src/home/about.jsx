@@ -31,15 +31,47 @@ const AboutContainer = styled.div`
   height: 50%;
 `;
 
+const SectionButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+`;
+
+const ExperienceButton = styled.button`
+  color: white;
+  background-color: #0f1360;
+`;
+
+const EducationButton = styled.button`
+  color: white;
+  background-color: #151030;
+`;
+
+const SkillsButton = styled.button`
+  color: white;
+  background-color: #151030;
+`;
+
+const Content = styled.div`
+  display: flex;
+`;
+
 function About() {
   return (
     <>
       <Container id="about">
         <AboutContainer>
           <h1>About</h1>
-          <h3>In development!</h3>
+          <SectionButtons>
+            <ExperienceButton>Experience</ExperienceButton>
+            <EducationButton>Education</EducationButton>
+            <SkillsButton>Skills</SkillsButton>
+          </SectionButtons>
+          <Content>
+            
+          </Content>
         </AboutContainer>
-
       </Container>
     </>
   );
