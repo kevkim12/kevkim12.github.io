@@ -36,21 +36,47 @@ const SectionButtons = styled.div`
   flex-direction: row;
   margin: auto;
   justify-content: center;
+  text-align: center;
+  
 `;
 
 const ExperienceButton = styled.button`
   color: white;
   background-color: #0f1360;
+  border-radius: 8px 0 0 8px;
+  border-style: none;
+  width: 15%;
+  text-align: center;
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
 `;
 
 const EducationButton = styled.button`
   color: white;
   background-color: #151030;
+  border-style: none;
+  width: 15%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 0 8px 8px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
 `;
 
 const SkillsButton = styled.button`
   color: white;
   background-color: #151030;
+ 
+  border-style: none;
+  width: 15%;
+  text-align: center;
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
 `;
 
 const Content = styled.div`
@@ -58,6 +84,8 @@ const Content = styled.div`
 `;
 
 function About() {
+  let selection = "experience";
+  
   return (
     <>
       <Container id="about">
@@ -65,11 +93,11 @@ function About() {
           <h1>About</h1>
           <SectionButtons>
             <ExperienceButton>Experience</ExperienceButton>
-            <EducationButton>Education</EducationButton>
             <SkillsButton>Skills</SkillsButton>
+            <EducationButton>Education</EducationButton>
           </SectionButtons>
           <Content>
-            
+
           </Content>
         </AboutContainer>
       </Container>
