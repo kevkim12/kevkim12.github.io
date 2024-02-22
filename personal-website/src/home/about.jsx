@@ -51,6 +51,17 @@ const ExperienceButton = styled.button`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 1vw;
+  cursor: pointer;
+
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #11156d;
+  }
+
+  &:active {
+    background-color: #0f1360;
+  }
 `;
 
 const EducationButton = styled.button`
@@ -64,6 +75,17 @@ const EducationButton = styled.button`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 1vw;
+  cursor: pointer;
+
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #1b153f;
+  }
+
+  &:active {
+    background-color: #151030;
+  }
 `;
 
 const SkillsButton = styled.button`
@@ -77,6 +99,17 @@ const SkillsButton = styled.button`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 1vw;
+  cursor: pointer;
+
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #1b153f;
+  }
+
+  &:active {
+    background-color: #151030;
+  }
 `;
 
 const Content = styled.div`
