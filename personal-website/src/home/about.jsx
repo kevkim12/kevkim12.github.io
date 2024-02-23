@@ -114,10 +114,56 @@ const SkillsButton = styled.button`
 
 const Content = styled.div`
   display: flex;
+  width: 100%;
+`;
+
+const Experience = styled.div`
+  background-color: red;
+`;
+
+const Skills = styled.div`
+  display: none;
+  background-color: red;
+`;
+
+const Education = styled.div`
+  display: none;
+  background-color: red;
 `;
 
 function About() {
   let selection = "experience";
+
+  function changeDisplay(selection) {
+    const experienceButton = document.getElementById("experience_button");
+    const skillsButton = document.getElementById("skills_button");
+    const educationButton = document.getElementById("education_button");
+    if (selection === "experience") {
+      document.getElementById("experience").style.display = "block";
+      document.getElementById("skills").style.display = "none";
+      document.getElementById("education").style.display = "none";
+      experienceButton.style.backgroundColor = "#0f1360";
+      skillsButton.style.backgroundColor = "#151030";
+      educationButton.style.backgroundColor = "#151030";
+    } else if (selection === "skills") {
+      document.getElementById("experience").style.display = "none";
+      document.getElementById("skills").style.display = "block";
+      document.getElementById("education").style.display = "none";
+      experienceButton.style.backgroundColor = "#151030";
+      skillsButton.style.backgroundColor = "#0f1360";
+      educationButton.style.backgroundColor = "#151030";
+    } else if (selection === "education") {
+      document.getElementById("experience").style.display = "none";
+      document.getElementById("skills").style.display = "none";
+      document.getElementById("education").style.display = "block";
+      experienceButton.style.backgroundColor = "#151030";
+      skillsButton.style.backgroundColor = "#151030";
+      educationButton.style.backgroundColor = "#0f1360";
+    }
+  };
+
+
+
   
   return (
     <>
@@ -125,12 +171,20 @@ function About() {
         <AboutContainer>
           <h1>About</h1>
           <SectionButtons>
-            <ExperienceButton>Experience</ExperienceButton>
-            <SkillsButton>Skills</SkillsButton>
-            <EducationButton>Education</EducationButton>
+            <ExperienceButton id="experience_button" onClick={() => changeDisplay("experience")}>Experience</ExperienceButton>
+            <SkillsButton id="skills_button" onClick={() => changeDisplay("skills")}>Skills</SkillsButton>
+            <EducationButton id="education_button" onClick={() => changeDisplay("education")}>Education</EducationButton>
           </SectionButtons>
           <Content>
-
+            <Experience id="experience">
+              <h3>Experience</h3>
+            </Experience>
+            <Skills id="skills">
+              <h3>Skills</h3>
+            </Skills>
+            <Education id="education">
+              <h3>Education</h3>
+            </Education>
           </Content>
         </AboutContainer>
       </Container>
