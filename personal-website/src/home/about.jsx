@@ -78,14 +78,6 @@ const EducationButton = styled.button`
   cursor: pointer;
 
   transition: color 0.3s, background-color 0.3s;
-
-  &:hover {
-    background-color: #1b153f;
-  }
-
-  &:active {
-    background-color: #151030;
-  }
 `;
 
 const SkillsButton = styled.button`
@@ -102,14 +94,6 @@ const SkillsButton = styled.button`
   cursor: pointer;
 
   transition: color 0.3s, background-color 0.3s;
-
-  &:hover {
-    background-color: #1b153f;
-  }
-
-  &:active {
-    background-color: #151030;
-  }
 `;
 
 const Content = styled.div`
@@ -145,6 +129,7 @@ function About() {
       experienceButton.style.backgroundColor = "#0f1360";
       skillsButton.style.backgroundColor = "#151030";
       educationButton.style.backgroundColor = "#151030";
+      selection = "experience";
     } else if (selection === "skills") {
       document.getElementById("experience").style.display = "none";
       document.getElementById("skills").style.display = "block";
@@ -152,6 +137,7 @@ function About() {
       experienceButton.style.backgroundColor = "#151030";
       skillsButton.style.backgroundColor = "#0f1360";
       educationButton.style.backgroundColor = "#151030";
+      selection = "skills";
     } else if (selection === "education") {
       document.getElementById("experience").style.display = "none";
       document.getElementById("skills").style.display = "none";
@@ -159,11 +145,9 @@ function About() {
       experienceButton.style.backgroundColor = "#151030";
       skillsButton.style.backgroundColor = "#151030";
       educationButton.style.backgroundColor = "#0f1360";
+      selection = "education";
     }
   };
-
-
-
   
   return (
     <>
