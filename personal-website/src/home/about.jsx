@@ -1,5 +1,14 @@
 import styled from 'styled-components'
 
+import c from '../assets/skills/c.png';
+import css3 from '../assets/skills/css3.png';
+import go from '../assets/skills/go.png';
+import html5 from '../assets/skills/html5.png';
+import java from '../assets/skills/java.png';
+import javascript from '../assets/skills/javascript.png';
+import lua from '../assets/skills/lua.png';
+import matlab from '../assets/skills/matlab.png';
+import ocaml from '../assets/skills/ocaml.png';
 import python from '../assets/skills/python.png';
 
 const Container = styled.div`
@@ -118,19 +127,29 @@ const Education = styled.div`
   background-color: red;
 `;
 
-const LanguageSection = styled.div`
+const LanguageSection = styled.table`
+  margin: auto;
 
 `;
 
-const SkillItem = styled.div`
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  width: 30%;
+const SkillItem = styled.td`
+  text-align: center;
+  height: 108px;
+  width: 108px;
+  background-color: #151030;
 
   img {
-    width: 100%;
+    width: 50%;
+    height: 50%;
+  }
 
+  strong {
+    display: block;
+    margin-top: 0.5em; /* Adjust this value as needed */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
 `;
 
 function About() {
@@ -184,15 +203,53 @@ function About() {
             <Skills id="skills">
               <div>
                 <h3>Languages</h3>
-                <LanguageSection>
-                  <table>
+                  <LanguageSection>
                     <tr>
                       <SkillItem>
+                        <img src={c} alt="C" />
+                        <strong>C</strong>
+                      </SkillItem>
+                      
+                      <SkillItem>
+                        <img src={go} alt="Go" />
+                        <strong>Go</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={java} alt="Java" />
+                        <strong>Java</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={javascript} alt="JavaScript" />
+                        <strong>JavaScript</strong>
+                      </SkillItem>
+                      <SkillItem>
                         <img src={python} alt="Python" />
+                        <strong>Python</strong>
                       </SkillItem>
                     </tr>
-                  </table>
-                </LanguageSection>
+                    <tr>
+                      <SkillItem>
+                        <img src={lua} alt="Lua" />
+                        <strong>Lua</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={ocaml} alt="OCaml" />
+                        <strong>OCaml</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={html5} alt="HTML5" />
+                        <strong>HTML5</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={css3} alt="CSS3" />
+                        <strong>CSS3</strong>
+                      </SkillItem>
+                      <SkillItem>
+                        <img src={matlab} alt="MATLAB" />
+                        <strong>MATLAB</strong>
+                      </SkillItem>
+                    </tr>
+                  </LanguageSection>
                 <h3>Frameworks</h3>
                 
                 <h3>Tools</h3>
