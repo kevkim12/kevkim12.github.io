@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import python from '../assets/skills/python.png';
+
 const Container = styled.div`
   background-color: #000322;
   height: 100vh;
@@ -121,6 +123,13 @@ const LanguageSection = styled.div`
 `;
 
 const SkillItem = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 30%;
+
+  img {
+    width: 100%;
 
 `;
 
@@ -176,10 +185,16 @@ function About() {
               <div>
                 <h3>Languages</h3>
                 <LanguageSection>
-                <SkillItem>Python</SkillItem>
+                  <table>
+                    <tr>
+                      <SkillItem>
+                        <img src={python} alt="Python" />
+                      </SkillItem>
+                    </tr>
+                  </table>
                 </LanguageSection>
                 <h3>Frameworks</h3>
-
+                
                 <h3>Tools</h3>
 
               </div>
