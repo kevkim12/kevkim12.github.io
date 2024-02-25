@@ -106,13 +106,22 @@ const Experience = styled.div`
 `;
 
 const Skills = styled.div`
+  margin-top: 2%;
   display: none;
-  background-color: red;
+  width: 100%;
 `;
 
 const Education = styled.div`
   display: none;
   background-color: red;
+`;
+
+const LanguageSection = styled.div`
+
+`;
+
+const SkillItem = styled.div`
+
 `;
 
 function About() {
@@ -164,7 +173,16 @@ function About() {
               <h3>Experience</h3>
             </Experience>
             <Skills id="skills">
-              <h3>Skills</h3>
+              <div>
+                <h3>Languages</h3>
+                <LanguageSection>
+                <SkillItem>Python</SkillItem>
+                </LanguageSection>
+                <h3>Frameworks</h3>
+
+                <h3>Tools</h3>
+
+              </div>
             </Skills>
             <Education id="education">
               <h3>Education</h3>
