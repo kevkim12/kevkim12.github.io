@@ -134,21 +134,24 @@ const LanguageSection = styled.table`
 
 const SkillItem = styled.td`
   text-align: center;
-  height: 108px;
-  width: 108px;
+  max-height: 108px;
+  max-width: 108px;
   background-color: #151030;
 
   img {
-    width: 50%;
+    margin-top: 20%;
+    max-width: 50%;
     height: 50%;
   }
 
   strong {
     display: block;
-    margin-top: 0.5em; /* Adjust this value as needed */
+    margin-top: 0.5em;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: 1vw;
     color: #fff;
+    margin-bottom: 0.5em;
   }
 `;
 
