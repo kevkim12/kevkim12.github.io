@@ -11,6 +11,10 @@ import matlab from '../assets/skills/matlab.png';
 import ocaml from '../assets/skills/ocaml.png';
 import python from '../assets/skills/python.png';
 
+import flask from '../assets/skills/flask.png';
+import react from '../assets/skills/react.png';
+import rojo from '../assets/skills/rojo.png';
+
 const Container = styled.div`
   background-color: #000322;
   height: 100vh;
@@ -127,7 +131,7 @@ const Education = styled.div`
   background-color: red;
 `;
 
-const LanguageSection = styled.table`
+const Section = styled.table`
   margin: auto;
 
 `;
@@ -206,55 +210,71 @@ function About() {
             <Skills id="skills">
               <div>
                 <h3>Languages</h3>
-                  <LanguageSection>
-                    <tr>
-                      <SkillItem>
-                        <img src={c} alt="C" />
-                        <strong>C</strong>
-                      </SkillItem>
-                      
-                      <SkillItem>
-                        <img src={go} alt="Go" />
-                        <strong>Go</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={java} alt="Java" />
-                        <strong>Java</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={javascript} alt="JavaScript" />
-                        <strong>JavaScript</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={python} alt="Python" />
-                        <strong>Python</strong>
-                      </SkillItem>
-                    </tr>
-                    <tr>
-                      <SkillItem>
-                        <img src={lua} alt="Lua" />
-                        <strong>Lua</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={ocaml} alt="OCaml" />
-                        <strong>OCaml</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={html5} alt="HTML5" />
-                        <strong>HTML5</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={css3} alt="CSS3" />
-                        <strong>CSS3</strong>
-                      </SkillItem>
-                      <SkillItem>
-                        <img src={matlab} alt="MATLAB" />
-                        <strong>MATLAB</strong>
-                      </SkillItem>
-                    </tr>
-                  </LanguageSection>
+                <Section>
+                  <tr>
+                    <SkillItem>
+                      <img src={c} alt="C" />
+                      <strong>C</strong>
+                    </SkillItem>
+                    
+                    <SkillItem>
+                      <img src={go} alt="Go" />
+                      <strong>Go</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={java} alt="Java" />
+                      <strong>Java</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={javascript} alt="JavaScript" />
+                      <strong>JavaScript</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={python} alt="Python" />
+                      <strong>Python</strong>
+                    </SkillItem>
+                  </tr>
+                  <tr>
+                    <SkillItem>
+                      <img src={lua} alt="Lua" />
+                      <strong>Lua</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={ocaml} alt="OCaml" />
+                      <strong>OCaml</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={html5} alt="HTML5" />
+                      <strong>HTML5</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={css3} alt="CSS3" />
+                      <strong>CSS3</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={matlab} alt="MATLAB" />
+                      <strong>MATLAB</strong>
+                    </SkillItem>
+                  </tr>
+                </Section>
                 <h3>Frameworks</h3>
-                
+                <Section>
+                  <tr>
+                    <SkillItem>
+                      <img src={react} alt="React" />
+                      <strong>React</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={flask} alt="Flask" />
+                      <strong>Flask</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={rojo} alt="Rojo" />
+                      <strong>Rojo</strong>
+                    </SkillItem>
+                  </tr>
+                </Section>
+
                 <h3>Tools</h3>
 
               </div>
