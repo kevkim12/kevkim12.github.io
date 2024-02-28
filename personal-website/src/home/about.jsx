@@ -10,10 +10,17 @@ import lua from '../assets/skills/lua.png';
 import matlab from '../assets/skills/matlab.png';
 import ocaml from '../assets/skills/ocaml.png';
 import python from '../assets/skills/python.png';
+import sql from '../assets/skills/sql.png';
 
 import flask from '../assets/skills/flask.png';
 import react from '../assets/skills/react.png';
 import rojo from '../assets/skills/rojo.png';
+
+import docker from '../assets/skills/docker.png';
+import git from '../assets/skills/git.png';
+import mongodb from '../assets/skills/mongodb.png';
+import mysql from '../assets/skills/mysql.png';
+import robloxstudio from '../assets/skills/robloxstudio.png';
 
 const Container = styled.div`
   background-color: #000322;
@@ -33,7 +40,7 @@ const Container = styled.div`
 
   h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 100;
     color: #fff;
     text-align: center;
@@ -138,8 +145,8 @@ const Section = styled.table`
 
 const SkillItem = styled.td`
   text-align: center;
-  max-height: 108px;
-  max-width: 108px;
+  max-height: 80px;
+  max-width: 80px;
   background-color: #151030;
 
   img {
@@ -153,7 +160,7 @@ const SkillItem = styled.td`
     margin-top: 0.5em;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: .7vw;
     color: #fff;
     margin-bottom: 0.5em;
   }
@@ -213,32 +220,31 @@ function About() {
                 <Section>
                   <tr>
                     <SkillItem>
-                      <img src={c} alt="C" />
-                      <strong>C</strong>
-                    </SkillItem>
-                    
-                    <SkillItem>
                       <img src={go} alt="Go" />
                       <strong>Go</strong>
                     </SkillItem>
                     <SkillItem>
-                      <img src={java} alt="Java" />
-                      <strong>Java</strong>
+                      <img src={python} alt="Python" />
+                      <strong>Python</strong>
                     </SkillItem>
                     <SkillItem>
                       <img src={javascript} alt="JavaScript" />
                       <strong>JavaScript</strong>
                     </SkillItem>
                     <SkillItem>
-                      <img src={python} alt="Python" />
-                      <strong>Python</strong>
+                      <img src={java} alt="Java" />
+                      <strong>Java</strong>
                     </SkillItem>
-                  </tr>
-                  <tr>
                     <SkillItem>
                       <img src={lua} alt="Lua" />
                       <strong>Lua</strong>
                     </SkillItem>
+                    <SkillItem>
+                      <img src={c} alt="C" />
+                      <strong>C</strong>
+                    </SkillItem>
+                  </tr>
+                  <tr>
                     <SkillItem>
                       <img src={ocaml} alt="OCaml" />
                       <strong>OCaml</strong>
@@ -254,6 +260,10 @@ function About() {
                     <SkillItem>
                       <img src={matlab} alt="MATLAB" />
                       <strong>MATLAB</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={sql} alt="SQL" />
+                      <strong>SQL</strong>
                     </SkillItem>
                   </tr>
                 </Section>
@@ -276,7 +286,30 @@ function About() {
                 </Section>
 
                 <h3>Tools</h3>
-
+                <Section>
+                  <tr>
+                    <SkillItem>
+                      <img src={docker} alt="Docker" />
+                      <strong>Docker</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={git} alt="Git" />
+                      <strong>Git</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={mysql} alt="MySQL" />
+                      <strong>MySQL</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={mongodb} alt="MongoDB" />
+                      <strong>MongoDB</strong>
+                    </SkillItem>
+                    <SkillItem>
+                      <img src={robloxstudio} alt="Roblox Studio" />
+                      <strong>Roblox Studio</strong>
+                    </SkillItem>
+                  </tr>
+                </Section>
               </div>
             </Skills>
             <Education id="education">
