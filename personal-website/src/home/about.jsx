@@ -166,6 +166,8 @@ const SkillItem = styled.td`
   }
 `;
 
+// C#, .NET, Next.js
+
 function About() {
   let selection = "experience";
 
