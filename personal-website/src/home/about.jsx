@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import bostonu from '../assets/education/bostonu.png'
+
 import c from '../assets/skills/c.png';
 import css3 from '../assets/skills/css3.png';
 import go from '../assets/skills/go.png';
@@ -43,6 +45,18 @@ const Container = styled.div`
     font-weight: 100;
     color: #fff;
     text-align: center;
+  }
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+  }
+
+  ul{
+    list-style-type: none;
   }
 `;
 
@@ -134,7 +148,7 @@ const Skills = styled.div`
 
 const Education = styled.div`
   display: none;
-  background-color: red;
+  margin: auto;
 `;
 
 const Section = styled.table`
@@ -164,6 +178,21 @@ const SkillItem = styled.td`
     margin-bottom: 0.5em;
   }
 `;
+
+const EducationContainer = styled.div`
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+`;
+
+const CourseworkContainer = styled.div`
+  background-color: red;
+  text-align: center;
+
+  ul{
+  }
+`;
+
 
 // C#, .NET, Next.js
 
@@ -314,7 +343,25 @@ function About() {
               </div>
             </Skills>
             <Education id="education">
-              <h3>Education</h3>
+              <EducationContainer>
+                
+                
+                <CourseworkContainer>
+                  <ul>
+                    <li><h3>FALL 2023 - SPRING 2024</h3></li>
+                    <li><h4><b>CS 357</b> - Introduction to Information Security</h4></li>
+                    <li><h4><b>CS 391</b> - Web Application Development</h4></li>
+                    <li><h4><b>CS 412</b> - Full-Stack Application Design and Development</h4></li>
+                    <li><h4><b>CS 440</b> - Introduction to Artificial Intelligence</h4></li>
+                  </ul>
+                </CourseworkContainer>
+                <div>
+                  <img src={bostonu} alt="Boston University" />
+
+                </div>
+                
+
+              </EducationContainer>
             </Education>
           </Content>
         </AboutContainer>
