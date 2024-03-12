@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import picture from '../assets/pfp.jpeg';
 import background from '../assets/backgrounds/wave.png';
+import { SlLocationPin } from "react-icons/sl";
+
 
 const Background = styled.div`
   background-image: url(${background});
@@ -49,16 +51,21 @@ const Picture = styled.img`
 `;
 
 const Information = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  max-width: 50vw;
+  width: 40%;
+
+  h3 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: calc(1.5vw);
+  
+  }
 `;
 
 const Header = styled.h1`
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 800;
   font-size: calc(3vw);
   opacity: 0;
   transition: opacity 3s ease;
@@ -86,7 +93,8 @@ function Home() {
       <Background>
         <Introduction id="home">
           <Information>
-            <Header id="header">Hi, I'm Kevin.</Header>
+            <h3><SlLocationPin style={{color:"white", maxWidth: "100px", maxHeight: "100px"}}/> Boston, MA</h3>
+            <Header id="header">Hello, I'm Kevin Kim.</Header>
             <Description id="description">I'm a software and game developer based in Atlanta.</Description>
           </Information>
           <PictureContainer>
