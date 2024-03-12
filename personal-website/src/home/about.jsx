@@ -158,14 +158,12 @@ const Section = styled.table`
 
 const SkillItem = styled.td`
   text-align: center;
-  max-height: 80px;
-  max-width: 80px;
+  width: 80px;
   background-color: #151030;
 
   img {
     margin-top: 20%;
-    max-width: 50%;
-    height: 50%;
+    width: 50px;
   }
 
   strong {
@@ -173,7 +171,7 @@ const SkillItem = styled.td`
     margin-top: 0.5em;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: .7vw;
+    font-size: .8em;
     color: #fff;
     margin-bottom: 0.5em;
   }

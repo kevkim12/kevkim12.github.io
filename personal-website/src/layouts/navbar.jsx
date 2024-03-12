@@ -5,9 +5,8 @@ const NavbarFrame = styled.nav`
   top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
-  gap: 50%;
   width: 100%;
   background-color: #00021a;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -26,6 +25,7 @@ const NavbarButtons = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 `
 
 const NavbarButton = styled.button`
@@ -35,7 +35,8 @@ const NavbarButton = styled.button`
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: calc(1.2vw);
+  font-size: 1.4em;
+  padding-right: 0;
 
   transition: color 0.3s, background-color 0.3s;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ce9eff 50%, #ce9eff 100%);
@@ -53,9 +54,10 @@ const NameLogo = styled.h1`
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: calc(1.7vw);
+  font-weight: 100;
+  font-size: 1.7em;
   color: #fff;
+  padding-left: 20px;
 `
 
 function Navbar() {
@@ -66,7 +68,7 @@ function Navbar() {
 
   return (
     <NavbarFrame>
-      <NameLogo>Kevin Kim &lt;/&gt;</NameLogo>
+      <NameLogo>Kevin Kim</NameLogo>
       <NavbarButtons>
         <li><NavbarButton onClick={() => goTo('home')}>Home</NavbarButton></li>
         <li><NavbarButton onClick={() => goTo('about')}>About</NavbarButton></li>
