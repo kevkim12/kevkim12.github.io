@@ -24,7 +24,7 @@ const Background = styled.div`
 
 const Introduction = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: col;
   place-content: center;
   align-items: center;
   justify-content: center;
@@ -36,8 +36,6 @@ const PictureContainer = styled.div`
   position: relative;
   width: 20%;
   height: auto;
-  border-radius: 50%;
-  border: 2px solid #410572;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,13 +49,13 @@ const Picture = styled.img`
 `;
 
 const Information = styled.div`
-  width: 40%;
+  max-width: 650px;
 
   h3 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: calc(1.5vw);
+    font-size: 1.5em;
   
   }
 `;
@@ -66,7 +64,7 @@ const Header = styled.h1`
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
-  font-size: calc(3vw);
+  font-size: 3.5em;
   opacity: 0;
   transition: opacity 3s ease;
 `;
@@ -75,7 +73,7 @@ const Description = styled.p`
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: calc(2vw);
+  font-size: 2em;
   opacity: 0;
   transition: opacity 6s ease;
 `;
@@ -94,7 +92,7 @@ function Home() {
         <Introduction id="home">
           <Information>
             <h3><SlLocationPin style={{color:"white", maxWidth: "100px", maxHeight: "100px"}}/> Boston, MA</h3>
-            <Header id="header">Hello, I'm Kevin Kim.</Header>
+            <Header id="header">Hi, I'm Kevin.</Header>
             <Description id="description">I'm a software and game developer based in Atlanta.</Description>
           </Information>
           <PictureContainer>
